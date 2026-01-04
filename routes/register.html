@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Online Voting System - Registration Page</title>
+    </head>
+    <body>
+        <h1>Online Voting System</h1>
+        <hr>
+        <h3>Online Registration</h3>
+        <form action="../api/register.php" method="post" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Enter Name" required>
+            <input type="text" name="mobile" 
+            placeholder="Enter Mobile"
+            maxlength="10"
+            pattern="[0-9]{10}"
+            required>
+            <br><br>
+            <input type="password"
+            name="password"
+            placeholder="Enter Password"
+            required
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}"
+            title="Password must be at least 8 characters and include uppercase, lowercase, number, and special character">
+
+
+            <input type="password" name="cpassword" placeholder="Confirm password" required><br><br>
+            <input type="text" name="address" placeholder="Address"><br><br>
+            Upload Image: <input type="file" name="photo"><br><br>
+            Select role: </Select><select name="role">
+                <option value="1">Voter</option>
+                <option value="2">Group</option>
+            </select><br><br>
+            <button>Register</button><br><br>
+            Already User? <a href="../index.html">Login here</a>
+            
+        </form>
+    </body>
+</html>
+
