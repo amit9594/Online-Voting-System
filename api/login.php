@@ -18,7 +18,7 @@ if(mysqli_num_rows($check) > 0){
     echo '
         <script>
             alert("Login Successfull!");
-            window.location = "../routes.dashboard.php";
+            window.location = "../routes/dashboard.php";
         </script>
         ';
 }
